@@ -1,0 +1,13 @@
+The first two parts of the given file system together called a Linux virtual file system. It provides a single set of commands for the kernel and developers to access the file system. This virtual file system requires the specific system driver to give an interface to the file system.
+ 
+*Changing the  permission for accessing file 
+      To change file and directory permissions, use the command chmod (change mode). The owner of a file can change the permissions for user ( u ), group ( g ), or others ( o ) by adding ( + ) or subtracting ( - ) the read, write, and execute permissions.
+*changing the ownership  for accessing file 
+    Become superuser or assume an equivalent role.
+Change the owner of a file by using the chown command. # chown new-owner filename. new-owner. Specifies the user name or UID of the new owner of the file or directory. filename. ...
+Verify that the owner of the file has changed. # ls -l filename.
+
+
+Default permission of file created by user
+
+By default, when you create a file as a regular user, it's given the permissions of rw-rw-r–. You can use the umask (stands for user mask) command to determine the default permissions for newly created files.

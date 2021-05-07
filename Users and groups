@@ -1,0 +1,33 @@
+
+Purpose of group and users on a Linux system 
+
+In Linux, a group is a collection of users. The main purpose of the groups is to define a set of privileges like read, write, or execute permission for a given resource that can be shared among the users within the group. Users can be added to an existing group to utilize the privileges it grants.
+Each group in a Linux system is uniquely identified by a group identification number or GID. All the information listing groups in a system are stored in /etc/group file. ... Every user has a primary user group and zero or more supplementary groups. On login, the group membership is set to the primary group of user.
+In Linux, a group is a collection of users. The main purpose of the groups is to define a set of privileges like read, write, or execute permission for a given resource that can be shared among the users within the group. Users can be added to an existing group to utilize the privileges it grants
+
+Users are accounts that can be used to login into a system. Each user is identified by a unique identification number or UID by the system. All the information of users in a system are stored in /etc/passwd file. The hashed passwords for users are stored in /etc/shadow file.
+List All Linux Users with the getent Command
+Username.
+The encrypted password (represented by x, located in the /etc/shadow file)
+User ID number (known as UID)
+User group ID (known as GID)
+User full name.
+User home directory.
+The login shell (by default set to bin/bash)
+
+Managing cammands for groups and users 
+adduser: add a user to the system.
+
+userdel: delete a user account and related files.
+
+addgroup: add a group to the system.
+
+delgroup: remove a group from the system.
+
+usermod: modify a user account.
+
+chage: change user password expiry information.
+
+sudo: run one or more commands as another user (typically with superuser permissions).
+
+Relevant files: /etc/passwd (user information), /etc/shadow (encrypted passwords), /etc/group (group information) and /etc/sudoers (configuration for sudo).

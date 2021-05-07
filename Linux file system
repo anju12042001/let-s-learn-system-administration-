@@ -1,0 +1,66 @@
+* what is Linux? 
+Linux® is an open source operating system (OS). An operating system is the software that directly manages a system's hardware and resources, like CPU, memory, and storage. The OS sits between applications and hardware and makes the connections between all of your software and the physical resources that do the work.
+* overview of Linux. 
+Linux is the best-known and most-used open source operating system. As an operating system, Linux is software that sits underneath all of the other software on a computer, receiving requests from those programs and relaying these requests to the computer's hardware.
+*Commands to manipulate files 
+#1) touch: Create a new file or update its timestamp.
+
+Syntax: touch [OPTION]…[FILE]
+Example: Create empty files called ‘file1’ and ‘file2’
+$ touch file1 file2
+#2) cat: Concatenate files and print to stdout.
+
+Syntax: cat [OPTION]…[FILE]
+Example: Create file1 with entered cotent
+$ cat > file1
+Hello
+^D
+#3) cp: Copy files
+
+Syntax: cp [OPTION]source destination
+Example: Copies the contents from file1 to file2 and contents of file1 is retained
+$ cp file1 file2
+#4) mv: Move files or rename files
+
+Syntax: mv [OPTION]source destination
+Example: Create empty files called ‘file1’ and ‘file2’
+$ mv file1 file2
+#5) rm: Remove files and directories
+
+Syntax: rm [OPTION]…[FILE]
+Example: Delete file1
+$ rm file1
+#6) mkdir: Make directory
+
+Syntax: mkdir [OPTION] directory
+Example: Create directory called dir1
+$ mkdir dir1
+#7) rmdir: Remove a directory
+
+Syntax: rmdir [OPTION] directory
+Example: Create empty files called ‘file1’ and ‘file2’
+$ rmdir dir1
+#8) cd: Change directory
+
+Syntax: cd [OPTION] directory
+Example: Change working directory to dir1
+$ cd dir1
+#9) pwd: Print the present working directory
+
+Syntax: pwd [OPTION]
+Example: Print ‘dir1’ if a current working directory is dir1
+$ pwd
+
+* understanding links between files. 
+The difference between the two are significant. With hard links, you can only link to files (and not directories); you cannot reference a file on a different disk or volume, and they reference the same inode as the original source. A hard link will continue to remain usable, even if the original file is removed.
+
+Types of links 
+In Linux there are two different types of links:
+
+Hard links
+
+Symbolic links
+
+The difference between the two are significant. With hard links, you can only link to files (and not directories); you cannot reference a file on a different disk or volume, and they reference the same inode as the original source. A hard link will continue to remain usable, even if the original file is removed.
+
+Symbolic links, on the other hand, can link to directories, reference a file/folder on a different disk or volume, will exist as a broken (unusable) link if the original location is deleted, reference abstract filenames and directories (as opposed to physical locations), and are given their own, unique inode.

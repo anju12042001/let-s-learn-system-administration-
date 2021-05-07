@@ -1,0 +1,19 @@
+Security-Enhanced Linux (SELinux) is a security architecture for Linux® systems that allows administrators to have more control over who can access the system. It was originally developed by the United States National Security Agency (NSA) as a series of patches to the Linux kernel using Linux Security Modules (LSM).
+* overview  of Selnux security 
+SELinux (Security Enhanced Linux) is an implementation of a Mandatory Access Control permission system (MAC) in the Linux kernel. This type of access control differs from Discretionary Access Control systems (DAC) like ACLs and standard unix ugo/rwx permissions, in how the access to a resource is provided
+
+* SELinux has three modes:
+     Enforcing: SELinux policy is enforced. SELinux denies access based on SELinux policy rules.
+Permissive: SELinux policy is not enforced. SELinux does not deny access, but denials are logged for actions that would have been denied if running in enforcing mode.
+Disabled: SELinux is disabled.
+
+* Commands for enforcing mode 
+   Open the /etc/selinux/config file in a text editor of your choice, for example: # vi /etc/selinux/config.
+Configure the SELINUX=enforcing option: # This file controls the state of SELinux on the system. # ...
+Save the change, and restart the system: # reboot.
+
+* enable 
+  We need to change the status of the service in the /etc/selinux/config file. ...
+You are now able to change the mode of SELinux to either enforcing or permissive. ...
+Next press CTRL + X to save changes and exit the edit mode. ...
+To reboot enter: sudo reboot.

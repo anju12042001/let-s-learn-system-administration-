@@ -1,0 +1,33 @@
+Linux storage is based on block devices. Block devices provide buffered access to the hardware, always allowing to read or write any sized block (including single characters/bytes) and are not subject to alignment restrictions. They are commonly used to represent hardware like hard disks
+.
+
+Command	                                                    Description
+help	                                                               Display list of available commands
+mklabel label	                                               Create a disk label for the partition table
+mkfs minor-num file-system-type.             	Create a file system of type file-system-type
+mkpart part-type fs-type start-mb end-mb	Make a partition without creating a new file system
+
+Manage storage devices 
+
+LVM allows you to create groups of physical devices and manage it as if it were one single block of space. You can then segment the space as needed into logical volumes, which function as partitions.
+
+To complete these tasks, you can use the administrative client command line.
+Attaching devices for the server. For Tivoli Storage Manager to use a device, you must attach the device to your server system and install the appropriate device driver.
+Configuring storage devices. ... 
+Managing removable media operations
+
+Linux Logical Volume Manager (LVM) tutorial
+Install LVM on major Linux distros.
+Create partitions.
+Create physical volumes.
+Create a virtual group.
+Create logical volumes.
+Create a filesystem on logical volumes.
+Edit fstab to automatically mount partitions.
+Mount logical volumes.
+
+Logical Volume Manager (LVM) is used on Linux to manage hard drives and other storage devices. As the name implies, it can sort raw storage into logical volumes, making it easy to configure and use.
+
+In this guide, you'll learn how LVM works on Linux systems. There's no better way to learn about LVM than simply running through an example, which is exactly what we'll do in the steps below. LVM works the same on any Linux distribution, so you can use any of the commands below on your own system.
+
+Follow along with us as we use LVM to create partitions, physical volumes, a virtual group, logical volumes, and filesystems on a hard disk. We'll also show how to mount, extend, and remove our newly created logical volumes. By the end of this tutorial, you'll have a full understanding of how to use LVM and apply your own configurations.

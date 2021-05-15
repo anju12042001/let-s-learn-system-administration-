@@ -1,0 +1,19 @@
+In Linux, Logical Volume Manager (LVM) is a device mapper framework that provides logical volume management for the Linux kernel. Most modern Linux distributions are LVM-aware to the point of being able to have their root file systems on a logical volume.
+
+Creating 1GiB LVM partition with gdisk command
+Run gdisk /dev/sdc command to initiate gdisk command.
+Type n to create new partition.
+Keep default partition number.
+Use default starting point.
+Use +1G to assign 1GiB space in this partition.
+Type 8e00 to set partition type as LVM partition.
+
+
+LVM Command Examples
+Display Physical Volumes (pvs and pvdisplay) ...
+Display Volume Groups (vgs and vgdisplay) ...
+Display Logical Volume Information (lvs and lvdisplay) ...
+List Partitions on a Linux system - fdisk. ...
+Create a Physical Volume (pvcreate) ...
+Create a New Volume Group (vgcreate) ...
+Rename a Volume Group (vgrename)
